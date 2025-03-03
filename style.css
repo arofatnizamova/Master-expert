@@ -75,6 +75,9 @@ a{
   width: 250px;
   border-radius: 16px;
 }
+.btn-red{
+  background: var(--color-red);
+}
 .dropdown-toggle::after{
   display: none;
 }
