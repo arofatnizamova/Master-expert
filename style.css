@@ -119,6 +119,9 @@ a{
 .fs-title-2{
   font-size: clamp(1.125rem, 1.075rem + 0.25vw, 1.375rem);
 }
+.fs-title-3{
+  font-size: clamp(1.125rem, 0.725rem + 2vw, 3.125rem);
+}
 .fs-paragraph{
   font-size: clamp(1.125rem, 0.9688rem + 0.5vw, 1.25rem);
 }
@@ -187,7 +190,72 @@ a{
 .slider-btn-box-2{
   right: 0;
 }
+.accordion-button:not(.collapsed) {
+	background-color: unset;
+	background: var(--color-corp-light);
+	color: white;
+}
 
+.accordion-button:focus {
+	box-shadow: none;
+}
+
+.accordion-collapse.collapse.show {
+	box-shadow: -1px 3px 12px 6px rgba(0, 0, 0, 0.25);
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+
+.accordion-item {
+	border: none;
+	border-radius: 20px;
+}
+
+.accordion-button.collapsed {
+	background: #f6f7f8;
+	border-radius: 20px;
+}
+
+.accordion-item:first-of-type>.accordion-header .accordion-button,
+.accordion-item .accordion-header .accordion-button {
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+}
+
+.accordion-item:last-of-type>.accordion-header .accordion-button.collapsed {
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+
+.accordion-button:not(.collapsed)::after {
+	filter: contrast(0%) brightness(2);
+}
+
+.form-control {
+	border: none;
+	border-bottom: 2px solid rgba(0, 0, 0, 0.7);
+	border-radius: 0;
+	padding-left: 0;
+}
+
+.form-control::placeholder {
+	color: rgba(0, 0, 0, 0.2);
+	font-weight: 300;
+}
+
+.form-control:focus {
+	box-shadow: unset;
+	border-color: black;
+}
+
+.form-check-input:checked {
+	background-color: black;
+	border-color: black;
+}
+
+.form-check-input:focus {
+	box-shadow: none;
+}
 /*breackpoints*/
 
 @media(max-width: 1400px){
