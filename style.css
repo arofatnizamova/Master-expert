@@ -2,13 +2,13 @@
 @font-face {
   font-family: 'Effra';
   src: url('fonts/Effra\ Regular.otf') format('opentype');
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: 'Effra';
   src: url('fonts/Effra\ Light.otf') format('opentype');
-  font-weight: 500;
+  font-weight: 300;
   font-style: normal;
 }
   
@@ -35,7 +35,9 @@
 }
 :root{
   --color-light: #F9F9F9;
+  --color-steam: #F2F8FF;
   --color-corp: #3E308B;
+  --color-red: #D3383C;
   --shadow: 0 15px 40px 0 rgba(0, 0, 0, 0.1);
 }
 body {
@@ -47,6 +49,9 @@ a{
 }
 .bg-light-grey{
   background: var(--color-light);
+}
+.bg-steam{
+  background: var(--color-steam);
 }
 .box-shadow{
   box-shadow: var(--shadow);
@@ -63,7 +68,8 @@ a{
   background: var(--color-corp);
   color: white;
   font-size: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
-  padding: 10px 40px;
+  padding: 10px;
+  width: 250px;
   border-radius: 16px;
 }
 .dropdown-toggle::after{
@@ -74,6 +80,21 @@ a{
 }
 .navbar-toggler{
   border: none;
+}
+.text-balance{
+  text-wrap: balance;
+}
+.text-red{
+  color: var(--color-red);
+}
+.w-fit-content{
+  width: fit-content;
+}
+.fs-big{
+  font-size: clamp(1.75rem, -0.9063rem + 8.5vw, 3.875rem);
+}
+.fs-paragraph{
+  font-size: clamp(1.125rem, 0.9688rem + 0.5vw, 1.25rem);
 }
 /*main styles*/
 .nav-link{
@@ -104,5 +125,9 @@ a{
   }
   .dropdown-item {
     text-wrap: wrap !important;
+  }
+  .btn-corp{
+    width: 200px;
+    padding: 5px 10px;
   }
 }
