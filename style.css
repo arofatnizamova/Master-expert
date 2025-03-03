@@ -39,6 +39,7 @@
   --color-corp: #3E308B;
   --color-red: #D3383C;
   --shadow: 0 15px 40px 0 rgba(0, 0, 0, 0.1);
+  --shadow-2: 0 15px 25px 0 rgba(0, 0, 0, 0.1);
 }
 body {
   font-family: 'Effra', 'Effra en',  sans-serif;
@@ -58,6 +59,9 @@ a{
 }
 .box-shadow{
   box-shadow: var(--shadow);
+}
+.box-shadow-2{
+  box-shadow: var(--shadow-2);
 }
 .form-control:focus {
   background-color: var(--color-light);
@@ -140,6 +144,15 @@ a{
   transform: translateX(-50%);
   bottom: 0;
 }
+.text-box{
+  position: absolute;
+  color: white;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.advantages-img{
+  height: 500px;
+}
 /*breackpoints*/
 
 @media(max-width: 1400px){
@@ -170,5 +183,8 @@ a{
   .btn-corp{
     width: 200px;
     padding: 5px 10px;
+  }
+  .advantages-img{
+    height: 300px;
   }
 }

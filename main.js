@@ -27,7 +27,27 @@ $(document).ready(function () {
           
         ] 
       }
-    } 
+    } else if(slider.hasClass('advantages')){
+      extraOptions = {
+        slidesToShow: 2,
+          slidesToScroll: 1,
+          centerMode: false,
+          arrows: true,
+          autoPlay: true,
+          dots: false,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1,
+                  arrows: true,
+                }
+            }
+          
+        ] 
+      }
+    }
     slider.slick($.extend({}, extraOptions, options ));
   })
 })
