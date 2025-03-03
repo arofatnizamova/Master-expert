@@ -50,4 +50,23 @@ $(document).ready(function () {
     }
     slider.slick($.extend({}, extraOptions, options ));
   })
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    grid: {
+      rows: 1,
+    },
+    spaceBetween: 20,
+    navigation: {
+      nextEl: ".slider-next",
+      prevEl: ".slider-prev",
+    },
+    loop: true,
+    breakpoints: {
+      990: { 
+        slidesPerView: 2, 
+        grid: { rows: 2 }, 
+      },
+    },
+  });
+  
 })
