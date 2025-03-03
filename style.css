@@ -256,6 +256,15 @@ a{
 .form-check-input:focus {
 	box-shadow: none;
 }
+footer{
+  box-shadow: 0 -10px 40px 0 rgba(0, 0, 0, 0.1);
+}
+.social-link{
+  background:var(--color-corp);
+  padding: 4px 10px;
+  border-radius: 50%;
+  color: white;
+}
 /*breackpoints*/
 
 @media(max-width: 1400px){
