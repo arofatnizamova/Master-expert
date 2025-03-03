@@ -53,6 +53,9 @@ a{
 .bg-steam{
   background: var(--color-steam);
 }
+.bg-corp{
+  background: var(--color-corp);
+}
 .box-shadow{
   box-shadow: var(--shadow);
 }
@@ -87,14 +90,29 @@ a{
 .text-red{
   color: var(--color-red);
 }
+.text-corp{
+  color: var(--color-corp);
+}
 .w-fit-content{
   width: fit-content;
+}
+.w-lg-80{
+  width: 80%;
 }
 .fs-big{
   font-size: clamp(1.75rem, -0.9063rem + 8.5vw, 3.875rem);
 }
+.fs-title{
+  font-size: clamp(1.375rem, 1rem + 1.875vw, 3.25rem);
+}
+.fs-title-2{
+  font-size: clamp(1.125rem, 1.075rem + 0.25vw, 1.375rem);
+}
 .fs-paragraph{
   font-size: clamp(1.125rem, 0.9688rem + 0.5vw, 1.25rem);
+}
+.fs-paragraph-2{
+  font-size: clamp(1rem, 0.825rem + 0.875vw, 1.875rem);
 }
 /*main styles*/
 .nav-link{
@@ -106,7 +124,19 @@ a{
   box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.1);
   border: none;
 }
-
+.servises-icons-bg{
+  background: var(--color-corp);
+  padding: 35px;
+  border-radius: 50%;
+}
+.servises-icons{
+  width: 74px;
+}
+.slider-btn-box{
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+}
 /*breackpoints*/
 
 @media(max-width: 1400px){
@@ -117,6 +147,14 @@ a{
 @media (min-width: 992px) {
   .gap-lg-6 {
     gap: 5rem !important;
+  }
+  .g-lg-6, .gy-lg-6 {
+    --bs-gutter-y: 5rem;
+}
+}
+@media(max-width: 990px){
+  .w-lg-80{
+    width: 100%;
   }
 }
 @media(max-width: 576px) {
