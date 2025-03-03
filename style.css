@@ -37,6 +37,7 @@
   --color-light: #F9F9F9;
   --color-steam: #F2F8FF;
   --color-corp: #3E308B;
+  --color-corp-light: #474F8F;
   --color-red: #D3383C;
   --shadow: 0 15px 40px 0 rgba(0, 0, 0, 0.1);
   --shadow-2: 0 15px 25px 0 rgba(0, 0, 0, 0.1);
@@ -56,6 +57,9 @@ a{
 }
 .bg-corp{
   background: var(--color-corp);
+}
+.bg-corp-light{
+  background: var(--color-corp-light);
 }
 .box-shadow{
   box-shadow: var(--shadow);
@@ -152,6 +156,19 @@ a{
 }
 .advantages-img{
   height: 500px;
+}
+.right-line{
+  position: relative;
+}
+.right-line::after{
+  position: absolute;
+  height: 110px;
+  width: 4px;
+  content: '';
+  background: white;
+  top: 50%;
+  right: -25%;
+  transform: translateY(-50%);
 }
 /*breackpoints*/
 
