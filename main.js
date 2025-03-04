@@ -55,6 +55,7 @@ $(document).ready(function () {
           arrows: true,
           autoPlay: true,
           dots: false,
+          autoplaySpeed: 500,
         responsive: [
             {
                 breakpoint: 990,
@@ -98,5 +99,7 @@ $(document).ready(function () {
     },
   });
   AOS.init();
-  
+  $('.openForm').click(function(){
+    $(".form-section").show(1000);
+  })
 })

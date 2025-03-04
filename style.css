@@ -129,6 +129,9 @@ a{
 .fs-title-3{
   font-size: clamp(1.125rem, 0.725rem + 2vw, 3.125rem);
 }
+.fs-title-4{
+  font-size: clamp(1.5rem, 1.325rem + 0.875vw, 2.375rem);
+}
 .fs-paragraph{
   font-size: clamp(1.125rem, 0.9688rem + 0.5vw, 1.25rem);
 }
@@ -137,6 +140,9 @@ a{
 }
 .fs-paragraph-3{
   font-size: clamp(1rem, 0.925rem + 0.375vw, 1.375rem);
+}
+.fs-paragraph-4{
+  font-size: 16px;
 }
 /*main styles*/
 .nav-link{
@@ -284,11 +290,28 @@ footer{
   right: 15%;
   top: -30%;
 }
+.person-img{
+  bottom: 0;
+  right: 5%;
+  height: 450px;
+}
+.mt-custom{
+  margin-top: 80px;
+}
+.form-section {
+  display: none;
+}
 /*breackpoints*/
 
 @media(max-width: 1400px){
   .logo{
     width: 100px;
+  }
+}
+@media(max-width: 1200px){
+  .person-img{
+    right: 0;
+    height: 400px;
   }
 }
 @media (min-width: 992px) {
@@ -321,7 +344,10 @@ footer{
   transform: translateX(-50%);
   bottom: -25%;
 }
-}
+.mt-custom{
+  margin-top: unset;
+
+}}
 @media(max-width: 576px) {
   .logo {
     width: 80px;
