@@ -280,6 +280,10 @@ footer{
   top: 0;
   height: 100%;
 }
+.slider-btn-box-3{
+  right: 15%;
+  top: -30%;
+}
 /*breackpoints*/
 
 @media(max-width: 1400px){
@@ -309,6 +313,13 @@ footer{
   left: 50%;
   transform: translateX(-50%);
   bottom: 0;
+}
+.slider-btn-box-3{
+  right: unset;
+  top: unset;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -25%;
 }
 }
 @media(max-width: 576px) {

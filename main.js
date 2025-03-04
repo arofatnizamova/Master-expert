@@ -47,6 +47,35 @@ $(document).ready(function () {
           
         ] 
       }
+    }else if(slider.hasClass('partners')){
+      extraOptions = {
+        slidesToShow: 3.8,
+          slidesToScroll: 1,
+          centerMode: true,
+          arrows: true,
+          autoPlay: true,
+          dots: false,
+        responsive: [
+            {
+                breakpoint: 990,
+                settings: {
+                  slidesToShow: 2.5,
+                  slidesToScroll: 1,
+                  arrows: true,
+                }
+            },
+            {
+              breakpoint: 576,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                centerMode: false,
+                arrows: true,
+              }
+          }
+          
+        ] 
+      }
     }
     slider.slick($.extend({}, extraOptions, options ));
   })
