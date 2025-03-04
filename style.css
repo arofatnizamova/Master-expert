@@ -39,6 +39,7 @@
   --color-corp: #3E308B;
   --color-corp-light: #474F8F;
   --color-red: #D3383C;
+  --color-red-2: #BA5251;
   --shadow: 0 15px 40px 0 rgba(0, 0, 0, 0.1);
   --shadow-2: 0 15px 25px 0 rgba(0, 0, 0, 0.1);
 }
@@ -101,8 +102,14 @@ a{
 .text-red{
   color: var(--color-red);
 }
+.text-red-2{
+  color: var(--color-red-2);
+}
 .text-corp{
   color: var(--color-corp);
+}
+.text-corp-light{
+  color: var(--color-corp-light);
 }
 .w-fit-content{
   width: fit-content;
@@ -127,6 +134,9 @@ a{
 }
 .fs-paragraph-2{
   font-size: clamp(1rem, 0.825rem + 0.875vw, 1.875rem);
+}
+.fs-paragraph-3{
+  font-size: clamp(1rem, 0.925rem + 0.375vw, 1.375rem);
 }
 /*main styles*/
 .nav-link{
@@ -264,6 +274,11 @@ footer{
   padding: 4px 10px;
   border-radius: 50%;
   color: white;
+}
+.bg-logo{
+  right: 0;
+  top: 0;
+  height: 100%;
 }
 /*breackpoints*/
 
