@@ -85,6 +85,9 @@ a{
   width: 250px;
   border-radius: 16px;
 }
+.bg-corp-light{
+  background: var(--color-corp-light);
+}
 .btn-red{
   background: var(--color-red);
 }
