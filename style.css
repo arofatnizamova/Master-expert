@@ -349,6 +349,16 @@ footer{
 .hover-red-card:hover img{
   filter: unset;
 }
+.breadcrumb-header{
+  height: clamp(220px, 30vw, 350px);
+}
+.number-element{
+  height: fit-content;
+  padding: 1px 15px;
+  background: var(--color-corp);
+  color: white;
+  border-radius: 50%;
+}
 /*breackpoints*/
 
 @media(max-width: 1400px){
@@ -411,6 +421,12 @@ footer{
 }
 .container-p-custom{
   padding: 0 !important;
+}
+.number-element{
+  padding: 1px 10px;
+}
+.icons-pages{
+  width: 37px;
 }
 
 }
