@@ -161,6 +161,11 @@ a{
 .fs-paragraph-5{
   font-size: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
 }
+.dropdown-item.active, .dropdown-item:active {
+  color: white;
+  text-decoration: none;
+  background-color: var(--color-corp-light);
+}
 /*main styles*/
 .nav-link{
   font-size: clamp(1.125rem, 1.1rem + 0.125vw, 1.25rem);
@@ -335,7 +340,7 @@ footer{
   height: 120px;
 }
 .hover-red-card{
-  height: clamp(300px, 30vw, 500px);
+  height: clamp(300px, 30vw, 550px);
   transition: all 0.3s ease;
   background: var(--color-steam);
 }
