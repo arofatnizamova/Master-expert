@@ -166,6 +166,13 @@ a{
   text-decoration: none;
   background-color: var(--color-corp-light);
 }
+.four-line{
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 /*main styles*/
 .nav-link{
   font-size: clamp(1.125rem, 1.1rem + 0.125vw, 1.25rem);
