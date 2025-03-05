@@ -125,7 +125,7 @@
         <section class="bg-steam">
             <div class="container py-lg-4 py-3 position-relative">
                 <img src="images/about-page/logo.png" alt="" class="position-absolute bg-logo">
-                <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <nav class="breadcrumb" aria-label="breadcrumb">
                     <ol class="breadcrumb fs-paragraph text-corp-light fw-light">
                       <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
                       <li class="breadcrumb-item active" aria-current="page">О компании</li>
@@ -173,7 +173,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row flex-lg-row-reverse gx-lg-5 gx-0 gy-3 mt-lg-5 mt-3">
+                <div id="value" class="row flex-lg-row-reverse gx-lg-5 gx-0 gy-3 mt-lg-5 mt-3">
                     <div class="col-lg-6" data-aos="fade-up" data-aos-duration="800">
                         <div class="w-100 h-100 d-flex flex-column justify-content-center">
                             <h3 class="fs-title-3 fw-bold">Ценности компании:</h3>
@@ -213,7 +213,7 @@
                 </div>
             </div>
         </section>
-        <section class="py-lg-5 py-3">
+        <section id="clients" class="py-lg-5 py-3">
             <h3 class="fs-title fw-medium text-center mb-lg-5 mb-3">
                 Наши клиенты
             </h3>
@@ -265,7 +265,7 @@
                 </div>
             </div>
         </section>
-        <section class="py-lg-5 py-3">
+        <section id="questions" class="py-lg-5 py-3">
             <div class="container">
                 <h3 class="fs-title fw-medium text-center mb-lg-5 mb-3">
                     Ваши вопросы
@@ -335,7 +335,7 @@
             </div>
         </section>
         <section class="py-lg-5 py-3">
-            <div class="container position-relative mt-custom">
+            <div class="container position-relative mt-custom container-p-custom">
                 <img src="images/about-page/3.png" alt="" class="img-fluid position-absolute person-img d-lg-block d-none">
                 <div class="bg-steam py-lg-5 pt-3 pb-0 px-lg-5 px-3 rounded-4">
                     <div class="row justify-content-lg-start justify-content-center gy-3">
@@ -343,7 +343,7 @@
                             <div class="w-100 h-100">
                                 <h3 class="fs-title-4 fw-bold text-lg-start text-center">Доверьте защиту интересов  <br>
                                     Вашего бизнеса профессионалам!</h3>
-                                    <button type="button" class="btn btn-corp d-block openForm mt-lg-5 mt-3 mx-lg-0 mx-auto">
+                                    <button type="button" class="btn btn-corp d-lg-block d-none openForm mt-lg-5 mt-3 mx-lg-0 mx-auto">
                                         Подробнее
                                     </button>
                             </div>
@@ -355,6 +355,9 @@
                         </div>
                     </div>
                 </div>
+                <button type="button" class="btn btn-corp d-lg-none d-block openForm mt-lg-5 mt-3 mx-lg-0 mx-auto">
+                    Подробнее
+                </button>
             </div>
         </section>
         <section class="py-lg-5 py-3 form-section">
